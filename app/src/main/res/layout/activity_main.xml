@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#B0E0E6"
+    tools:context=".MainActivity">
+
+
+    // FRAME LAYOUT KO ISLIYE LIKH RHE HAI TAAKI HUMM BACKGROUND BI SET KR SKE
+    //FrameLayout should be used to hold a single child view
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/purple_200">
+    <TextView
+        android:id="@+id/number"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:textSize="25dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:text="Number"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/teal_700">
+    <TextView
+        android:id="@+id/familymember"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="?android:attr/selectableItemBackground"
+        android:onClick="familymember"
+        android:padding="10dp"
+        android:text="Family Member"
+        android:textSize="25dp" />
+    </FrameLayout>
+    <TextView
+        android:id="@+id/colors"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:textSize="25dp"
+        android:background="#A52A2A"
+        android:text="Colors"
+        />
+    <TextView
+        android:id="@+id/phrases"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:textSize="25dp"
+        android:background="#B8860B"
+        android:text="Phrases"
+
+        />
+</LinearLayout>
